@@ -1,0 +1,95 @@
+/*Crée le : 9 mars 2018, 11:30:50Auteur: Rue de l'info*/
+ 
+@media screen {
+	html,
+	body {
+		/*width:1050px; /* base de test et de mesures */
+		margin: .75em 1%;
+		/* 12px/16px 12px/1050px*/
+		font-family: Arial, Helvetica, sans-serif;
+		/* font-size : 16px;/* pour test ==> défini dans chaque media query */
+	}
+	/* titre */
+	body>header {
+		font-size: 3em;
+		font-weight: bold;
+		color: blue;
+		margin-bottom: 1em;
+		/*50px/3em;*/
+	}
+	/* titres du bloc main */
+	#formation>header,
+	#expe>header {
+		font-size: 2em;
+		/* 32 px */
+		margin: 0.625em0px;
+		/* 20px/32px */
+		padding: 0.7%;
+		/*5px/706px */
+		font-weight: bold;
+		color: white;
+		background-color: blue;
+	}
+	/* titre et bloc main à gauche */
+	/* DEPLACE DANS LE fichier cvpc.cssbody>header, main{display: block;float:left;width:73% ; /* 750px/1026px */
+	/*}*/
+	/* diplômes */
+	#formation table th {
+		text-align: left;
+		font-size: 1.2em;
+	}
+	/* espaces entre 2 formations */
+	#formation table tr:nth-child(2n) td {
+		padding-bottom: 1em;
+		/* 16px */
+	}
+	/* bloc photo + adresseet divers */
+	/* DEPLACE DANS LE fichier cvpc.css#civil, #divers {float:right;width: 24%;background-color: blue;color:white;padding: .5em0.8% ;}*/
+	/* pas de triangles pour détails à la demande */
+	/* DEPLACE DANS LE fichier cvpc.css#expe h1>img, #divers h2>img {display:none;}*/
+	/* CIVIL------------------------------------- */
+	/* photo identité */
+	#civil>img {
+		display: block;
+		width: 95%;
+		margin: auto;
+		border: 3px solid white;
+		border-radius: 5px;
+	}
+	/* adresse de la personne */
+	#civil p {
+		margin: 0.3em 0px;
+		/* 5px/16px 0px; */
+	}
+	/* EXPERIENCE ------------------------------------- */
+	/* énum en expériences prof */
+	#expe h1 {
+		font-size: 1.2em;
+		background-color: #11b7ee;
+		font-weight: normal;
+	}
+	/* séparation en 2 parties de l'expé prof */
+	#expe h1 span:first-of-type {
+		display: inline-block;
+		/* nécessaire pour dimensionner */
+		word-wrap: break-word;
+		width: 40%;
+		/* espacer les 2 parties */
+	}
+	#expe ul {
+		margin-left: 13%;
+		/*100px/750px;*/
+	}
+	/* DIVERS ----------------------------------------- */
+	/* titres et enum en divers */
+	#divers>h2 {
+		background-color: white;
+		color: blue;
+		padding: 2%;
+		/*5px/234px */
+	}
+	#divers ul {
+		list-style: none;
+		padding-left: 0px;
+	}
+}
